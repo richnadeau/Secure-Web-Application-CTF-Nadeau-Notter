@@ -5,19 +5,7 @@ public class com.example.log4shell.LoginServlet extends javax.servlet.http.HttpS
        0: aload_0
        1: invokespecial #1                  // Method javax/servlet/http/HttpServlet."<init>":()V
        4: return
-         
-  private static final Pattern unamePattern = Pattern.compile("[A-Za-z]+");
 
-  protected void doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) {
-    try {
-        String unameCode = request.getParameter( "uname" );
-        if ( !unamePattern.matcher( unameCode ).matches()  {
-            throw new YourValidationException( "Improper username format." );
-            
-        }
-        // do what you want here, after its been validated ..
-    } 
-  }
 
   protected void doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
     Code:
